@@ -3,10 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up now</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Hello
+    <div class="container">
+        <div class="image">
+            <img class="logo" src="logo.png" alt="logo">
+            <img class="pagoda" src="pagoda.jpg" alt="pagoda">
+        </div>
+        <div class="text">
+            <div class="ad">
+            <p>
+                This is not a real online service! You know you need something 
+                <br>
+                like this in your life to help you realize your deepest dreams. <br>
+                Sign up <span style="font-style: italic;">now</span> to get started
+            </p>
+            <p>You <span style="font-style: italic;">know</span> you want to.</p>
+            </div>
+            <div class="form">
+                <p>Let's do this!</p>
+                <form>
+                    <div class="info">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="John" required>
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Doe" required>
+                        </div>
+                    </div>   
+                    <div class="info">
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" placeholder="johndoe@gmail.com" required>
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" placeholder="+1(123) 456-7890" pattern="\d{11}" required>
+                        </div>
+                    </div>   
+                    <div class="info">
+                        <div>
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" name="password" minlength="8" required>
+                        </div>
+                        <div>
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+                        </div>
+                    </div>     
+                </form>
+            </div>
+            <div class="action">
+                <button type="button">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

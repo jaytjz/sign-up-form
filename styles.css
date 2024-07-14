@@ -1,3 +1,109 @@
 body{
-    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+button{
+    padding: 1rem 3rem;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: #0056b3;
+}
+
+a{
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover{
+    color: #0056b3;
+}
+
+input{
+    background-color: #F5F5F5;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.3rem;
+    border: 2px solid black;
+
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid{
+    border-color: green;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.image{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    height: 15vh;
+    right: 0px;
+}
+
+.pagoda{
+    height: 100vh;
+    width: auto;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.ad{
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
+.form{
+    background-color: white;
+    padding: 1rem 3rem;
+}
+
+.form > p{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.info{
+    display: flex;
+    gap: 6rem;
+    padding: 0.5rem 0rem;
+}
+
+.info > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.action{
+    font-size: 1rem;
+    padding: 3rem;
+    padding-top: 2rem;
 }
